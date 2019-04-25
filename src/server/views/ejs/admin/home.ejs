@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DDC Admin</title>
+  <link href="/lib/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/admin/common.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/admin/home.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/admin/dashboard.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="/lib/jquery-3.3.1.min.js"></script>
+  <script src="/lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+
+  <!--<script src="/js/admin/login.js"></script>-->
+  <script src="/js/admin/panel-list.js"></script>
+  <script src="/js/admin/doc-stores.js"></script>
+  <script src="/js/admin/dashboard.js"></script>
+
+</head>
+
+<body>
+  <div class="nav-side-menu wrapper fadeInDown">
+    <div class="menu-title">
+      <h3>DDC Admin Dashboard</h3></div>
+
+    <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+        <li class="active">
+          <a href="#">
+                  <i class="fa fa-lg"></i> Document Stores
+                  </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  </div>
+  <div id="action-container-div" class="wrapper fadeInDown">
+
+    <div class="action-div" id="doc-store-div">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Document Stores</h3>
+        </div>
+        <ul id="doc-stores-list" class="list-group">
+        </ul>
+      </div>
+
+      <!-- Create doc store div-->
+      <h3>New</h3>
+      <div id="create-store-div" class="well well-sm">
+        <input type="text" class="form-control" id="create-store-name-input" placeholder="Name">
+        <textarea class="form-control" rows="9" id="create-store-schema-input" placeholder="Schema"></textarea>
+        <button class="btn btn-primary" id="create-store-button">Create document store</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

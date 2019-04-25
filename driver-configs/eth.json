@@ -1,0 +1,5 @@
+{
+  "eth_network": "rospten",
+  "eth_rpc_host": "http://localhost:8545",
+  "ipfs_host": "/ip4/127.0.0.1/tcp/5001"
+}

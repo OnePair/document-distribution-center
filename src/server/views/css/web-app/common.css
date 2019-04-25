@@ -1,0 +1,11 @@
+html {
+  background-color: #282828;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #282828;
+  background-image: url("/img/background.jpg");
+  padding: 2em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>DDC Admin</title>
+
+  <link href="/lib/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/admin/common.css" rel="stylesheet" id="bootstrap-css">
+  <link href="/css/admin/login.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="/lib/jquery-3.3.1.min.js"></script>
+  <script src="/lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script src="/js/admin/login.js"></script>
+</head>
+
+<body>
+  <div>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="/img/user-male-circle.png" id="icon" alt="User Icon" />
+          <h3>DDC Admin</h3>
+        </div>
+
+        <!-- Login Form -->
+        <input type="text" id="authid-input" class="fadeIn second" name="AuthID" placeholder="AuthID">
+        <!--<input type="submit" class="fadeIn fourth" value="Log In">-->
+        <button id="login-button" class="fadeIn second" type="button">Log In!</button>
+
+        <form id="login-form" method="POST" action="/admin/login">
+          <input type="hidden" name="authResponse" id="auth-response-input">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
